@@ -1,17 +1,33 @@
-package com.example.osos.myapplication;
+package com.example.osos.myapplication.model;
 
 /**
  * Created by osos on 8/6/2017.
  */
 
 public class Messages {
-    String message, seen, time, type;
+    private String message, type, from;
+    private long time;
+    private boolean seen;
 
-    public Messages(String message, String seen, String time, String type, String from) {
+    // constractor
+    public Messages() {
+    }
+
+    // constractor
+    public Messages(String message, String type, String from, long time, boolean seen) {
         this.message = message;
-        this.seen = seen;
-        this.time = time;
         this.type = type;
+        this.from = from;
+        this.time = time;
+        this.seen = seen;
+    }
+
+    public String getFrom() {
+        return from;
+    }
+
+    public void setFrom(String from) {
+        this.from = from;
     }
 
     public String getMessage() {
@@ -22,27 +38,27 @@ public class Messages {
         this.message = message;
     }
 
-    public String getSeen() {
-        return seen;
-    }
-
-    public void setSeen(String seen) {
-        this.seen = seen;
-    }
-
-    public String getTime() {
-        return time;
-    }
-
-    public void setTime(String time) {
-        this.time = time;
-    }
-
     public String getType() {
         return type;
     }
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public long getTime() {
+        return time;
+    }
+
+    public void setTime(long time) {
+        this.time = time;
+    }
+
+    public boolean isSeen() {
+        return seen;
+    }
+
+    public void setSeen(boolean seen) {
+        this.seen = seen;
     }
 }

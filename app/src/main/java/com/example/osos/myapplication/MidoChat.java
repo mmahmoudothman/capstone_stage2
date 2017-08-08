@@ -10,7 +10,7 @@ import com.squareup.picasso.Picasso;
  * Created by osos on 8/5/2017.
  */
 
-public class LapitChat extends Application {
+public class MidoChat extends Application {
 
     @Override
     public void onCreate() {
@@ -20,8 +20,8 @@ public class LapitChat extends Application {
         /*Picasso*/
 
         Picasso.Builder builder = new Picasso.Builder(this);
-        builder.downloader(new OkHttpDownloader(this,Integer.MAX_VALUE));
-        Picasso built =builder.build();
+        builder.downloader(new OkHttpDownloader(this, Integer.MAX_VALUE));
+        Picasso built = builder.build();
         built.setIndicatorsEnabled(true);
         built.setLoggingEnabled(true);
         Picasso.setSingletonInstance(built);

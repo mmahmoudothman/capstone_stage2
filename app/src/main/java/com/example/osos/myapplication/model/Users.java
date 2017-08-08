@@ -1,4 +1,4 @@
-package com.example.osos.myapplication;
+package com.example.osos.myapplication.model;
 
 /**
  * Created by osos on 8/4/2017.
@@ -9,7 +9,7 @@ public class Users {
     public String image;
     public String status;
 
-    public Users(){
+    public Users() {
 
     }
 
