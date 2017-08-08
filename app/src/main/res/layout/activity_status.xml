@@ -37,7 +37,7 @@
         android:text="@string/save_changes"
         android:textSize="24sp"
         android:textColor="#ffffff"
-        android:background="@color/colorAccent"
+        android:background="@drawable/message_text_background"
         android:layout_below="@+id/status_input"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
